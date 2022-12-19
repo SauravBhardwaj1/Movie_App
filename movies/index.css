@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(27, 23, 23);
+}
+h1{
+    margin-left: 20px;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(83, 70, 70);
+    position: sticky;
+    top: 0px;
+    /* justify-content: space-around; */
+    /* margin: auto; */
+}
+#navbar>#cont{
+    width: 20%;
+    /* margin-top: 28px; */
+    margin-left: 20px;
+    border: 0px solid white;
+}
+#navbar>#cont>#trending{
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-color: rgb(128, 219, 219);
+    padding: 6px;
+    font-size: 13px;
+}
+#navbar>#search{
+    display: flex;
+    border: 0px solid white;
+    width: 35%;
+    margin-left: 480px;
+    margin-top: 10px;
+}
+#search>.tag{
+    width: 40%;
+    border: 0px solid blue;
+}
+#search>.tag>h2{
+    margin-left: 5px;
+}
+#search>.input{
+    width: 50%;
+    border: 0px solid blue;
+    /* margin-top: 20px; */
+}
+#search>.input>input{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
+#carousel>img{
+    margin-top: -10px;
+    width: 100%;
+    height: 70vh;
+}
+h1{
+    color: white;
+}
+#movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: white;
+}
+#basic{
+    display: block;
+}
+#loader{
+    /* position: fixed; */
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    color: aliceblue;
+    margin-left: 40%;
+}
+#login{
+    width: 10%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#login>button{
+    padding: 8px;
+    width: 90%;
+    color: black;
+    background-color: bisque;
+    
+}
+#login>button>a{
+    font-size:15px ;
+    
+}
+#txt{
+    margin-top: -50px;
+    margin-left: 400px;
+}
+#live{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+#News{
+    margin-top: 10px ;
+    margin-left: 20px;
+}
+#trending{
+    margin-top: -40px;
+    background-color: aquamarine;
+}

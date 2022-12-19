@@ -1,0 +1,54 @@
+body{
+    background-image: url("https://wallpaperaccess.com/full/695130.jpg")
+}
+#container{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+}
+h1{
+    color: rgb(86, 202, 196);
+}
+form{
+    font-size: 30px;
+    width: 6%;
+}
+input{
+    margin-top: 6%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+button{
+    margin-top:2% ;
+    width: 80px;
+    padding: 8px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    cursor: pointer;;
+}
+#form-register{
+    margin-left: 350px;
+    margin-top: 100px;
+}
+#login-form{
+    margin-right: 300px;
+    margin-top: 100px;
+}
+#btn{
+    width: 30%;
+    border: 0px solid black;
+    margin: auto;
+}
+#btn>button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(177, 112, 112);
+}
+#btn>button>a{
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    font-family:cursive;
+}

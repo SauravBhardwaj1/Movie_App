@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        <a href="index.html">Index</a>
+    </button>
+    <div>
+        <form id="form" action="" onsubmit="movies_data(event)">
+            <input type="text" placeholder="Movie" id="movie">
+            <input type="date" placeholder="Release date" id="date">
+            <input type="number" placeholder="IMDb rating" id="rating">
+            <input type="url" placeholder="movie image" id="image">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    
+    const movieData= (m,d,r,i)=>{
+        this.movie=m;
+        this.date=d;
+        this.rating=r;
+        this.image=i;
+    };
+
+
+    const movies_data = (event)=>{
+        // event.preventDefault();
+        let arr=JSON.parse(localStorage.getItem('movies')) || [];
+        let form=document.getElementById('form');
+
+        let movie=form.movie.value;
+        let date=form.date.value;
+        let rating=form.rating.value;
+        let image=form.image.value; 
+
+        let m1=new movieData(movie,date,rating,image)
+
+        console.log(m1)
+        arr.push(m1)
+        localStorage.setItem('movies',JSON.stringify(arr))
+    }
+</script>

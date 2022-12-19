@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <h1>Hotstar</h1>
+        </div>
+        
+        <div id="cont">
+            <button id="trending">
+                <a href="Exciting.html">Go to Exciting movie</a>
+            </button>
+        </div>
+        <div id="live">
+            <a href="index.html">
+                <h2>Live</h2>
+            </a>
+        </div>
+        <div id="News">
+            <a href="index.html">
+                <h2>News</h2>
+            </a>
+        </div>
+        <div id="search">
+            <!-- <input oninput="searchMovies()" type="text" id="query"> -->
+            <div class="tag">
+                <h2>Search movie</h2>
+            </div>
+            <div class="input">
+                <input oninput="debounce(searchMovies,1000)" type="text" id="query" placeholder="Search" autocomplete="off">
+
+            </div>
+            
+            
+        </div>
+        <div id="login">
+            <button>
+                <a href="login signup.html">LOGIN</a>
+            </button>
+        </div>
+    </div> 
+    
+    
+    <div id="carousel"></div>
+    
+    <div id="movies"></div>
+    <div id="txt">
+        <h1>Your Searched Movie Will Appear Here</h1>
+    </div>
+    <div id="cont">
+        <button id="trending">
+            <a href="trending.html">
+                <h3>Go to Trending movie</h3>
+            </a>
+        </button>
+    </div>
+    
+    <!-- <div id="basic">
+        <img id="loader" src="https://i.stack.imgur.com/ATB3o.gif" alt="">
+    </div> -->
+
+</body>
+</html>
+<script src="./index.js"></script>
